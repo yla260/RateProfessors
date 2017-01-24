@@ -25,5 +25,5 @@ class EasinessVote(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
     easinessvote_text = models.CharField(max_length=200)
     votes = models.IntegerField(default=0)
-    def __str__(self):   # 在python2版本中使用的是__unique__
+    def __str__(self):   # 在python2版本中使用的是__unique__this is a testing for git
         return self.easinessvote_text
